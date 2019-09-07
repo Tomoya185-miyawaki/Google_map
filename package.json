@@ -1,0 +1,14 @@
+{
+  "name": "google_map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "firebaseInit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^6.6.0"
+  }
+}
