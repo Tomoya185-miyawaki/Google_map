@@ -8,15 +8,18 @@
   </head>
   <body>
     <form method="POST" id="form_id" action="file:///Users/miyawaki/private/google_map/index.html">
-      <h3>現住所</h3>
       <div id="results"></div>
       <div>
-        <label for="name">名前</label>
-        <input type="text" name="name" id="name" placeholder="例) 山田太郎">
+        <p>
+          <label for="name">名前</label>
+          <input type="text" name="name" id="name" placeholder="例) 山田太郎">
+        </p>
       </div>
       <div>
-        <label for="address">住所</label>
-        <input type="text" name="address" id="address" placeholder="例) 宮崎県">
+        <p>
+          <label for="address">住所</label>
+          <input type="text" name="address" id="address" placeholder="例) 宮崎県宮崎市">
+        </p>
       </div>
     </form>
     <input type="button" onclick="getLatLng()" value="登録する">

@@ -8,11 +8,11 @@ function saveData() {
   .then(function(docRef) {
     document.forms.form_id.name.value = '';
     document.forms.form_id.address.value = '';
-    document.getElementById("results").innerHTML = '<p class="success">保存に成功しました</p>';
+    document.getElementById("results").innerHTML = '<p class="success">登録に成功しました</p>';
     console.log("Document written with ID: ", docRef.id);
   })
   .catch(function (error) {
-    document.getElementById("results").innerHTML = '<p class="success">保存に失敗しました</p>';
+    document.getElementById("results").innerHTML = '<p class="success">登録に失敗しました</p>';
     console.error("Error adding document: ", error);
   });  
 }
