@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <p><button onclick="getMyPlace()" class="btn-tag">現在地から近くに住んでいる友達を探す</button></p>
-    <div id="result"></div>
-    <div id="friend"></div>
-    <div id="address"></div>
-    <div id="map" style="width:100%;height:300px;"></div>
+    <form method="POST" id="form_id" action="file:///Users/miyawaki/private/google_map/index.html">
+      <h3>現住所</h3>
+      <div id="results"></div>
+      <div>
+        <label for="name">名前</label>
+        <input type="text" name="name" id="name" placeholder="例) 山田太郎">
+      </div>
+      <div>
+        <label for="address">住所</label>
+        <input type="text" name="address" id="address" placeholder="例) 宮崎県">
+      </div>
+    </form>
+    <input type="button" onclick="getLatLng()" value="登録する">
+    <div>
+      <p><a href="map.html">Mapへ</a></p>
+    </div>
     <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
     <script src="js/firebaseInit.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaZrNNxwXzueLIYP_tXKVgNk7EZiRF-6M" async defer></script>
-    <script src="js/map.js"></script>
+    <script src="js/firebase.js"></script>
   </body>
 </html>
